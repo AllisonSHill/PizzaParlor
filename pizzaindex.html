@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Menu</title> 
+		<meta http-equiv="Content Type" content="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+<!-- CSS -->    
+        <link rel="stylesheet" href="./css/pizzastylesheet.css">       
+	</head>   
+
+<body>	
+
+
+<div class="mainTitleContainer"><h1>Pizza Parlor</h1>
+</div>		
+	<div class="titleContainer"><h2>The Basics</h2>
+	</div>	
+<div id="formMenu">
+        <div class="menuContainer">
+		<h3>Size</h3>
+		<input class="size" type="radio" name="size" value="Personal Pizza" checked>
+		 Personal Pizza<br>
+		<input class="size" type="radio" name="size" value="Medium Pizza">
+		 Medium Pizza<br>
+		<input class="size" type="radio" name="size" value="Large Pizza">
+		 Large Pizza<br>
+		<input class="size" type="radio" name="size" value="Extra Large Pizza">
+		 Extra Large Pizza<br>
+	</div>
+	<div class="menuContainer">
+		<h3>Crust</h3>
+		<input class="crust" type="radio" name="crust" value="Plain Crust" checked>
+		 Plain Crust<br>
+		<input class="crust" type="radio" name="crust" value="Garlic Butter Crust">
+		 Garlic Butter Crust<br>
+		<input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust">
+		 Cheese Stuffed Crust<br>
+		<input class="crust" type="radio" name="crust" value="Spicy Crust">
+		 Spicy Crust<br>
+		<input class="crust" type="radio" name="crust" value="House Special Crust">
+		 House Special Crust<br>
+	</div>
+	<div class="menuContainer">
+		<h3>Sauce</h3>
+		<input class="sauce" type="radio" name="sauce" value="Marinara Sauce" checked>
+		 Marinara Sauce<br>
+		<input class="sauce" type="radio" name="sauce" value="White Sauce">
+		 White Sauce<br>
+		<input class="sauce" type="radio" name="sauce" value="Barbeque Sauce">
+		 Barbeque Sauce<br>
+		<input class="sauce" type="radio" name="sauce" value="No Sauce">
+		 No Sauce<br>
+	</div>
+	<div class="menuContainer">
+		<h3>Type of Cheese</h3>
+		<input class="cheese" type="radio" name="cheese" value="Regular Cheese" checked>
+		 Regular Cheese<br>
+		<input class="cheese" type="radio" name="cheese" value="No Cheese">
+		 No Cheese<br>
+		<input class="cheese" type="radio" name="cheese" value="Extra Cheese">
+		 Extra Cheese<br>
+	</div>
+</div>
+<div class="titleContainer"><h2>Toppings</h2>
+</div>
+<div id="formMenu">
+	<div class="menuContainer">
+		<h3>Choose Your Meats</h3>
+		<input class="meat" type="checkbox" name="meat" value=" Pepperoni">
+		 Pepperoni<br>
+		<input class="meat" type="checkbox" name="meat" value=" Sausage">
+		 Sausage<br>
+		<input class="meat" type="checkbox" name="meat" value=" Canadian Bacon">
+		 Canadian Bacon<br>
+		<input class="meat" type="checkbox" name="meat" value=" Ground Beef">
+		 Ground Beef<br>
+		<input class="meat" type="checkbox" name="meat" value=" Anchovy">
+		 Anchovy<br>
+		<input class="meat" type="checkbox" name="meat" value=" Chicken">
+		 Chicken<br>
+	</div>
+	<div class="menuContainer">
+		<h3>Choose Your Veggies</h3>
+		<input class="veggies" type="checkbox" name="veggies" value=" Tomatoes">
+		 Tomatoes<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Onions">
+		 Onions<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Olives">
+		 Olives<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Green Peppers">
+		 Green Peppers<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Mushrooms">
+		 Mushrooms<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Pineapple">
+		 Pineapple<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Spinach">
+		 Spinach<br>
+		<input class="veggies" type="checkbox" name="veggies" value=" Jalapeno">
+		 Jalapeno<br>
+	</div>
+</div>
+<div class="buttons">
+	<button class="button" onclick="function1()">
+	<h4>View Order</h4></button>
+	<button class="button" onclick="cancel()">
+	<h4>Cancel</h4></button>
+</div>
+<div id="cart">
+	<table id="receipt">
+	<tr>
+		<th><h2>Item:</h2></th>
+		<th><h2>Price:</h2></th>
+	</tr>
+	<tr>
+		<td id="item1"></td><td id="item1Cost"></td>
+	</tr><tr>
+		<td id="item2"></td><td id="item2Cost"></td>
+	</tr><tr>
+		<td id="item3"></td><td id="item3Cost"></td>
+	</tr><tr>
+		<td id="item4"></td><td id="item4Cost"></td>
+	</tr><tr>
+		<td id="itemMeat"></td><td id="meatCost"></td>
+	</tr><tr>
+		<td id="itemVeggies"></td><td id="veggiesCost"></td>
+	</tr><tr>
+		<td id="total">Total:&nbsp;&nbsp;&nbsp;&nbsp;</td><td id="totalCost"></td>
+	</tr>
+	</table>
+</div>
+
+
+</div>
+    
+<!-- JAVASCRIPT -->    
+        <script src="./js/pizzajavascript.js"></script>
+<!-- /JAVASCRIPT -->
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    background-image: url("../images/pizza_background.jpeg");
+    background-repeat: repeat;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2 {
+    color: rgba(0,0,0,1.0);
+    text-shadow: 1.5px 1.5px 5px rgba(167, 0, 0, .6);
+    text-align: center;
+}
+
+h3 {
+    color: rgba(0,0,0,1.0);
+    text-shadow: 1px 1px 2px rgba(204, 11, 11, .6);
+    text-align: center;
+}
+
+.mainTitleContainer,.titleContainer {
+    position: relative;
+    margin: 3% auto;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgb(253, 14, 14);
+    border-radius: 5px;
+}
+
+.mainTitleContainer {
+    width: 500px;
+    height: 90px;
+}
+
+.titleContainer {
+    width: 300px;
+    height: 70px;
+}
+
+#formMenu {
+    margin: 0% auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.menuContainer {
+    position: relative;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgb(12, 49, 255);
+    border-radius: 3px;
+    width: 250px;
+    height: 250px;
+    padding: 10px 15px 0px 15px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    margin: 3% 1%;
+    position: inline-block;
+    padding: 5px 25px;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+    background-color: rgba(0, 0, 255, .9);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px #999;
+  }
+  
+.button:hover {
+    background-color: rgb(0, 0, 190);
+}
+  
+.button:active {
+    background-color: rgb(0, 0, 128);
+    box-shadow: -3px -3px #666;
+    transform: translateY(4px);
+}
+
+#cart {
+    text-align: center;
+    display: none;
+}
+
+#receipt {
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid red;
+    width: 500px;
+    height: auto; 
+}
+
+#receipt th {
+    border-bottom: 2px solid;
+    border-color: red;
+    background-color: rgba(255, 215, 215, .9);
+}
+
+#receipt td {
+    text-align: left;
+    border-bottom: 1px solid;
+    border-color: #999;
+    padding: 10px;
+    word-wrap: normal;
+    min-width: 90px;
+}
+
+#receipt #total {
+    text-align: right;
+    font-weight: bold;
+}
