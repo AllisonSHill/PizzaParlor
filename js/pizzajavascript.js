@@ -114,8 +114,10 @@ function function1() {
 // add the total
     var total = sizeTotal+crustTotal+sauceTotal+cheeseTotal+meatTotal+veggiesTotal;
 
-    document.getElementById("totalCost").innerHTML = "$"+total+".00";
+    document.getElementById("totalCost").innerHTML = "$" + total + ".00";
 
+// scroll down
+    window.scrollTo(0, document.body.scrollHeight)
 }
 
 // cancel button 

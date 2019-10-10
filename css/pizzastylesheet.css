@@ -1,38 +1,100 @@
 body {
     background-image: url("../images/pizza_background.jpg");
+    background-size: 50%;
     background-repeat: repeat;
-    background-position: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-position: right bottom;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1,h2 {
-    color: rgba(0,0,0,1.0);
-    text-shadow: 1.5px 1.5px 5px rgba(167, 0, 0, .6);
+h1 {
+    font-family: "Brush Script MT";
+    font-size: 90px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
     text-align: center;
+}
+
+h2 {
+    color: black;
+    text-shadow: 1.5px 1.5px 5px rgba(0, 0, 128, .5);
+    text-align: center;
+    margin-top: 10px;
 }
 
 h3 {
     color: rgba(0,0,0,1.0);
-    text-shadow: 1px 1px 2px rgba(204, 11, 11, .6);
+    text-shadow: 1px 1px 2px rgba(128, 0, 0, .5);
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
-.mainTitleContainer,.titleContainer {
+.receipt {
+    text-shadow: 1px 1px 1px rgba(128, 0, 0, .3);
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, .6);
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    font-family: 'Goudy Old Style';
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 15px;
+    text-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, .6);
+}
+
+.small {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.mainTitleContainer,.titleContainer,.subTitle {
     position: relative;
     margin: 3% auto;
-    background-color: rgba(255, 255, 255, .9);
-    border: 2px solid rgb(253, 14, 14);
     border-radius: 5px;
+    padding-top: 0px;
 }
 
 .mainTitleContainer {
-    width: 500px;
-    height: 90px;
+    width: 600px;
+    height: auto;
+    background-color: rgba(0, 0, 128, .9);
+    border: 2px solid black;
+}
+
+.subTitle {
+    width: 550px;
+    height: 70px;
+    background-color: rgba(0, 0, 100, .9);
+    border: 2px solid black;
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+
+#fullMenu {
+    background-color: rgba(255, 255, 255, .7);
+    width: 600px;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 100);
 }
 
 .titleContainer {
-    width: 300px;
-    height: 70px;
+    width: 250px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid darkred;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
 #formMenu {
@@ -45,64 +107,107 @@ h3 {
     align-items: stretch;
 }
 
+#menuItems {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#menuPrices {
+    margin-top: 15px;
+    display: inline-block;
+    text-align: right;
+}
+
+.sizePrices {
+    margin-left: 60px;
+}
+
+.crustPrices {
+    margin-left: 20px;
+}
+
+.cheesePrices {
+    margin-left: 60px;
+}
+
 .menuContainer {
     position: relative;
     margin: 10px auto;
     background-color: rgba(255, 255, 255, .9);
-    border: 2px solid rgb(12, 49, 255);
+    border: 2px solid rgba(0, 0, 128, .9);
     border-radius: 3px;
     width: 250px;
-    height: 250px;
-    padding: 10px 15px 0px 15px;
+    height: auto;
+    padding: 10px 15px 20px 15px;
 }
 
 .buttons {
     text-align: center;
 }
 
+#submit {
+    background-color: limegreen;
+}
+
+#cancel {
+    background-color: orangered;
+}
+
 .button {
     margin: 3% 1%;
     position: inline-block;
-    padding: 5px 25px;
     width: 200px;
     cursor: pointer;
     text-align: center;
     font-size: 18px;
-    outline: none;
+    border: 2px solid darkblue;
     color: #fff;
-    background-color: rgba(0, 0, 255, .9);
-    border: none;
     border-radius: 4px;
     box-shadow: 3px 3px #999;
-  }
-  
-.button:hover {
-    background-color: rgb(0, 0, 190);
 }
   
+#submit:hover {
+    background-color: green;
+}
+
+#cancel:hover {
+    background-color: darkred;
+}
+ 
+.button:hover {
+    background-color: rgb(0, 0, 128);
+    box-shadow: 2px 2px #666;
+}
+
 .button:active {
     background-color: rgb(0, 0, 128);
-    box-shadow: -3px -3px #666;
+    box-shadow: -2px -2px #666;
     transform: translateY(4px);
 }
 
 #cart {
+    background-color: rgba(255, 255, 255, .7);
+    width: 500px;
+    padding: 6px;
+    margin: 15px auto 50px auto;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 100);
     text-align: center;
     display: none;
 }
 
 #receipt {
-    margin: 10px auto;
+    /*margin: 20px auto 40px auto;*/
     background-color: rgba(255, 255, 255, .9);
-    border: 2px solid red;
+    border: 2px solid darkred;
     width: 500px;
     height: auto; 
 }
 
 #receipt th {
     border-bottom: 2px solid;
-    border-color: red;
-    background-color: rgba(255, 215, 215, .9);
+    border-color: darkred;
+    background-color: rgba(255, 255, 255, .9);
 }
 
 #receipt td {
@@ -117,4 +222,11 @@ h3 {
 #receipt #total {
     text-align: right;
     font-weight: bold;
+    font-size: 30px;
+}
+
+#receipt #totalCost {
+    font-weight: bold;
+    font-size: 15px;
+    font-size: 24px;
 }
