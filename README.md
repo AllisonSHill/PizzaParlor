@@ -1,8 +1,7 @@
-# PizzaParlor
+# Pizza Parlor
 
 ## JavaScript Course Final Project
 
-### Build a semi-functional single page application for a virtual Pizza Parlor:
 
 ASSIGNMENT SCENARIO: Your client would like you to create an online pizza menu system using only HTML, CSS, and JavaScript.
 
@@ -68,12 +67,6 @@ Your HTML/CSS/JavaScript will need to present the menu, retrieve the patron's se
 
 The client is not particular about the aesthetics and images are not required. Therefore, you have full freedom on the front end design. However, they are sticklers about menu functionality.
 
-EXAMPLE OUTPUT FOR A RECEIPT:
+This drill is only concerned about your JavaScript code. 
 
-This drill is only concerned about your JavaScript code. But with that said, you may be interested in seeing an inspiring and practical example of how aspects of this drill could be professionally applied:
 
-NOTE: Practical Example It is expected that you will need to do some additional research in order to complete this assignment. This is intentional as it mirrors a real-world scenario. It is commonplace to research and plan projects in order to meet client demands.
-
-If you find yourself a little overwhelmed, try to break it all down into smaller pieces. Then, resolve each piece one at a time. Research online, review previous videos, check the developer forums, collaborate with other students when and where appropriate. If you are still stumped after all of these steps, talk with an instructor for some additional hints.
-
-You can do this. Be creative and really get into the spirit of this assignment. And most of all: Have fun! When you have completed the drill, submit your GitHub link on the next page.
