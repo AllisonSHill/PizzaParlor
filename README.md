@@ -65,8 +65,8 @@ EXPECTATIONS:
 
 Your HTML/CSS/JavaScript will need to present the menu, retrieve the patron's selection and return an invoiced receipt to the user's screen with their total purchase price once they press an "Order" button.
 
+You are not required to allow the customer to place the order, only view the order details.
+
 The client is not particular about the aesthetics and images are not required. Therefore, you have full freedom on the front end design. However, they are sticklers about menu functionality.
 
-This drill is only concerned about your JavaScript code. 
-
-
+This drill is only concerned with your JavaScript code. 
