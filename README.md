@@ -1,5 +1,9 @@
 # PizzaParlor
 
+## JavaScript Course Final Project
+
+### Build a semi-functional single page application for a virtual Pizza Parlor:
+
 ASSIGNMENT SCENARIO: Your client would like you to create an online pizza menu system using only HTML, CSS, and JavaScript.
 
 YOUR MENU WILL NEED TO PROVIDE THE FOLLOWING:
